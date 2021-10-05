@@ -4,7 +4,7 @@
 
 using namespace std;
 
-bool twoSum(vector<int> &nums){
+bool removeDuplicates(vector<int> &nums){
   vector<int>::iterator it = nums.begin();
   set<int> s;
   for(it = nums.begin(); it != nums.end(); ++it){
@@ -25,10 +25,6 @@ int main()
         cin >> tmp;
         nums.push_back(tmp);
     }
-    bool result = twoSum(nums);
+    bool result = removeDuplicates(nums);
     cout << result;
-    // for(int i = 0; i < result.size(); i++){
-    //     cout << result[i] << ' ';
-    // }
-
 }
